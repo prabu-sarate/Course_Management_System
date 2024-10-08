@@ -3,14 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ShowDataComponent } from './show-data/show-data.component';
+import { AddCourseCompComponent } from './add-course-comp/add-course-comp.component';
+import { FormsModule } from '@angular/forms';
+import { CourseListComponent } from './course-list/course-list.component';
+import { UpdateCourseComponent } from './update-course/update-course.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowDataComponent,
+    AddCourseCompComponent,
+    CourseListComponent,
+    UpdateCourseComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
